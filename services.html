@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services | Artsynergy</title>
+  <title>Services | ArtSynergy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,21 +16,46 @@
     
     }
     header {
-      background-color: #000;
+      background-color: transparent;
       color: white;
       padding: 20px;
       text-align: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
     }
+
+    nav {
+      
+      padding: 10px;
+      text-align: center;
+      animation: slideDown 1.4s ease-out;
+    }
+
     nav a {
       color: white;
-      text-decoration: none;
       margin: 0 15px;
-      font-weight: 600;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .header {
-      background-color: #fff;
-      padding: 20px 0;
+
+    /* Animation classes for scroll effects */
+    .section,
+    .slideshow-container,
+    .cta {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     }
+
+    .section.visible,
+    .slideshow-container.visible,
+    .cta.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .container {
       width: 90%;
       max-width: 1100px;
@@ -62,29 +87,27 @@
 
     .hero {
       background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('40 Times People Came Up With The Best Tattoo Designs And Shared Pics On This Online Group.jpg') center/cover no-repeat;
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 100px 20px;
       background-attachment: fixed;
+      padding: 180px 40px;
+      /* Added padding to account for fixed header */
     }
     h2{
     font-family: 'Georgia', serif;
   font-size: 32px;
-  color: burlywood;
-  text-align: center;
-  font-style: italic;
-}
-h1{
-  font-family: 'Georgia', serif;
-  font-size: 32px;
-  color: burlywood;
+  color: white;
   text-align: center;
   font-style: italic;
 }
     .hero h1 {
-      font-size: 2.8em;
-      margin-bottom: 10px;
+      font-family: 'Georgia', serif;
+  font-size: 42px;
+  color: burlywood;
+  text-align: center;
+  font-style: italic;
     }
+
     .hero p {
       font-size: 1.2em;
       max-width: 700px;
@@ -185,21 +208,24 @@ h1{
   </style>
       
   <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">Artsynergy</div>
-      <nav class="nav">
-        <ul>
-          <a href="index.html">Home</a>
+  <header>
+    <h2>ArtSynergy</h2>
+    <nav>
+      <a href="index.html">Home</a>
       <a href="about.html">About us</a>
       <a href="events.html">Events</a>
-      <a href="#services.html">Services</a>
+      <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
-        </ul>
-      </nav>
-    </div>
-  </header>
-           <h1>Collaboratiive Opportunities</h1>
+    </nav>
+
+
+</header>
+           <!-- Hero -->
+<section class="hero">
+  <h1>Welcome to ArtSynergy</h1>
+  <p>Collaborative Opportunities.</p>
+  
+</section>
   
         <!-- Events Section -->
 <section class="events">
@@ -266,7 +292,7 @@ h1{
               <div class="features">
                 <div class="feature">
                   
-                <img src="Aménager un atelier dans une chambre - Clem Around The Corner.jpg" alt="Aménager un atelier dans une chambre - Clem Around The Corner.jpg" style="padding: 2%; border-radius: 8vh; height: 60vh;>
+                <img src="Aménager un atelier dans une chambre - Clem Around The Corner.jpg" alt="Aménager un atelier dans une chambre - Clem Around The Corner.jpg" style="padding: 2%; border-radius: 8vh; height: 60vh;">
                  
                 </div>
               </div>
