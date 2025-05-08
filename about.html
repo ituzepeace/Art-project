@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artsynergy</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      animation: slideDown 1.4s ease-out;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    h2 {
+  font-family: 'Georgia', serif;
+  font-size: 32px;
+  color: black;
+  text-align: center;
+  font-style: italic;
+}
+nav {
+      
+      padding: 10px;
+      text-align: center;
+      animation: slideDown 1.4s ease-out;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .timeline-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+   
+    
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .feature {
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .feature h3 {
+      color: #ff3366;
+      margin-bottom: 10px;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .logo {
+      color: #000;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1400x500') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .events {
+      padding: 60px 0;
+    }
+
+    .event-card {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: grey;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 40px;
+      background-color: aqua;
+    }
+
+    .event-card img {
+      width: 100%;
+      max-width: 350px;
+      object-fit: cover;
+      height: 120px 20px;
+    background-color: aqua;
+    }
+
+    .event-content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .event-content h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      color: black;
+    }
+
+    .event-content p {
+      margin: 10px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ff3366;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background-color: #e02a5b;
+    }
+
+    .card {
+      display: flex;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 300px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .card h2 {
+      margin-top: 0;
+    }
+     /* Animation */
+     @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eee;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+      <h2>ArtSynergy</h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="events.html">Events</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+  
+  </header>
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>welcome to Artsynergy</h1>
+    <p>Bridging Creativity and Community.</p>
+  </div>
+</section>
+
+<!-- Events Section -->
+<section class="events">
+  <div class="container">
+
+    <div class="event-card">
+      <img src=".jpg" alt="Mixed Media Workshop" style="padding: 2%; border-radius: 8vh; height: 60vh;">
+      <div class="event-content">
+        <h2>Empowerment</h2>
+        <p>We strive to empower artists by providing them with the tools and platform to showcase their talents to a wider audience.</p>
+        
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src=".jpg" alt=" .jpg" style="width: 100vh; height: 60vh; padding: 2%; border-radius: 8vh;">
+      <div class="event-content">
+        <h2>Collaboration</h2>
+        <p>Collaboration is at the heart of what we do; we believe that together, artists can achieve greater heights and explore new creative avenues.</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src=".jpg" alt=".jpg" style="padding: 2%; border-radius: 8vh; height: 60vh;">
+      <div class="event-content">
+        <h2>Community Engagement</h2>
+        <p>We are dedicated to building a vibrant community where artists and art lovers can connect, share ideas, and inspire one another.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+ 
+
+  <div class="timeline-container">
+
+  
+    
+     <!-- Our Journey -->
+    <section class="section" id="features">
+      <h2>Our journey</h2>
+      <div class="features">
+        <div class="feature"> 
+           <img src="eye.jpg" alt="eye.jpg">
+        
+           <p><strong>The Founding of Artsynergy</strong><br>May 6, 2025</p>
+         
+        </div>
+        <div class="feature">
+          <img src="Surrealism Drawing Ideas_ A Big Journey Beyond Reality 2024 62.jpg"alt="Surrealism Drawing Ideas_ A Big Journey Beyond Reality 2024 62.jpg">
+         
+          <p><strong>First Community Event</strong><br>May 6, 2025</p>
+        </div>
+        <div class="feature">
+          <img src="tatoo.jpg" alt="tatoo.jpg">
+        
+          <p><strong>Launch of Online Platform</strong><br>May 6, 2025</p>
+        </div>
+      </div>
+    </section>
+
+  
+
+  <footer>
+    ©2025 - Proudly built with Strikingly<br>
+    Cookie Use: We use cookies to ensure a smooth browsing experience. By continuing, we assume you accept the use of cookies. 
+    <button><a href="#">Learn More</a></button>
+  </footer>
+
+</body>
+</html>
